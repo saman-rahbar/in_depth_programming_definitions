@@ -11,9 +11,9 @@ phone_book = {"Sam": 6399160096,
 # creating a function to do the reverse look up
 def caller_id(number):
     for key, value in phone_book.items():
-        if value == number:
-            return key
+        if number == value:
+            print(key)
         else:
-            print("The number does not exist!")
+            print("Opps not this one, this is {}'s number".format(key))
 
-
+caller_id(6399160096)
