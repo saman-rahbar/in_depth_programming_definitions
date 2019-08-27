@@ -12,6 +12,12 @@ class Circuit:
         self.load = 0 # current load 
 
     def connect(self, amps):
+        """
+        function to check the connectivity 
+        :param amps: int
+        
+        :return: None
+        """
         if self.capacity += amps > max_amp:
             raise exceptions("Exceeding max amps!")
         elif self.capacity += amps < 0:
